@@ -1,0 +1,20 @@
+{
+  "schema": "stateforge.state/v1",
+  "stateforgeVersion": "0.1.0",
+  "project": {
+    "name": "StateForge",
+    "summary": "Git-native persistent project state and context handoff for AI coding agents.",
+    "repository": null
+  },
+  "sourceOfTruth": {
+    "type": "git",
+    "canonicalPath": ".ai/",
+    "externalMemory": false
+  },
+  "current": {
+    "status": "active",
+    "activeTask": null,
+    "lastHandoff": ".ai/handoffs/20260821110014484-end-to-end-stateforge-implementation-complete.md"
+  },
+  "updatedAt": "2026-08-21T11:00:14.484Z"
+}
