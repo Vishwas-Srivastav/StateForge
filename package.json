@@ -1,0 +1,47 @@
+{
+  "name": "stateforge",
+  "version": "0.1.0",
+  "description": "Git-native persistent project state and handoff for AI coding agents.",
+  "type": "module",
+  "bin": {
+    "stateforge": "./bin/stateforge.mjs"
+  },
+  "files": [
+    "bin/",
+    "src/",
+    "docs/",
+    "README.md",
+    "AGENTS.md",
+    "CLAUDE.md",
+    "GEMINI.md",
+    ".github/copilot-instructions.md",
+    ".cursor/rules/stateforge.mdc",
+    ".windsurfrules"
+  ],
+  "scripts": {
+    "stateforge": "node --experimental-strip-types src/cli.ts",
+    "check": "node scripts/check.mjs",
+    "verify": "node scripts/check.mjs",
+    "smoke": "node --experimental-strip-types src/cli.ts status",
+    "validate": "node --experimental-strip-types src/cli.ts validate",
+    "pack:dry-run": "npm pack --dry-run",
+    "test": "node --experimental-strip-types --test test/*.test.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "keywords": [
+    "ai",
+    "agents",
+    "cli",
+    "git",
+    "handoff",
+    "project-state"
+  ],
+  "license": "UNLICENSED",
+  "engines": {
+    "node": ">=22.6"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "typescript": "^5.7.2"
+  }
+}

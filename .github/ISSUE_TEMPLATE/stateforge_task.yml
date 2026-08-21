@@ -1,0 +1,26 @@
+name: StateForge Task
+description: Track work that should be mirrored in the repository-local .ai state.
+title: "[Task]: "
+labels:
+  - stateforge
+body:
+  - type: textarea
+    id: summary
+    attributes:
+      label: Summary
+      description: What should change?
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Context
+      description: Relevant decisions, handoffs, files, or constraints.
+  - type: checkboxes
+    id: stateforge
+    attributes:
+      label: StateForge state
+      options:
+        - label: Add or update the matching task in .ai/tasks.jsonl.
+        - label: Record any durable decision in .ai/decisions.jsonl.
+        - label: Add a handoff in .ai/handoffs/ before pausing substantial work.

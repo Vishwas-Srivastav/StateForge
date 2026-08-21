@@ -1,0 +1,5 @@
+This repository uses StateForge for persistent AI project state.
+
+Read `.ai/AGENT_PROTOCOL.md` first. The canonical state lives under `.ai/`, especially `.ai/state.json`, `.ai/tasks.jsonl`, `.ai/decisions.jsonl`, and `.ai/handoffs/`.
+
+Keep StateForge state changes in Git with the work they describe.

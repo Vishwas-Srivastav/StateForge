@@ -1,5 +1,5 @@
 # ==============================================================================
-# Git Ignore - Lightweight Engineering Template
+# Git Ignore - StateForge Engine
 # ==============================================================================
 
 # Environment and Secret Files
@@ -25,11 +25,6 @@ __pycache__/
 dist/
 build/
 out/
-bin/
-*.exe
-*.dll
-*.so
-*.dylib
 .next/
 .nuxt/
 .cache/
