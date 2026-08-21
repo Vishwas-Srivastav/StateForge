@@ -1,0 +1,12 @@
+---
+description: StateForge project state protocol
+globs:
+  - "**/*"
+alwaysApply: true
+---
+
+This repository uses StateForge for persistent AI project state.
+
+Read `.ai/AGENT_PROTOCOL.md` before making changes. The canonical state lives under `.ai/`.
+
+Do not use an external memory service, vector database, embedding index, or backend as the source of truth for StateForge state.
